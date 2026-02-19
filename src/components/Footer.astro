@@ -1,11 +1,16 @@
 ---
 interface Props {
-	spacer?: boolean;
+    spacer?: boolean;
 }
 const { spacer = false } = Astro.props;
 ---
 
-<nav class:list={["flex justify-center gap-4 py-4 text-[12px] lowercase", spacer && "mt-8"]}>
+<nav
+    class:list={[
+        "flex justify-center gap-4 py-4 text-[12px] lowercase",
+        spacer && "mt-8",
+    ]}
+>
     <a class="underline" href="https://github.com/noctisatrae">GitHub</a>
     <a class="underline" href="/rss">RSS</a>
     <a class="underline" href="/about">About This Website</a>
