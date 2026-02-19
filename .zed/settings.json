@@ -1,0 +1,7 @@
+{
+	"lsp": {
+		"biome": {
+			"enabled": false
+		}
+	}
+}

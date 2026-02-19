@@ -1,14 +1,14 @@
 ---
-import type { HTMLAttributes } from 'astro/types';
-import logoSvg from '../../public/favicon.svg?raw';
+import type { HTMLAttributes } from "astro/types";
+import logoSvg from "../../public/favicon.svg?raw";
 
-type Props = HTMLAttributes<'svg'>;
+type Props = HTMLAttributes<"svg">;
 
 const props = Astro.props;
 const attrs = Object.entries(props)
 	.map(([key, value]) => `${key}="${value}"`)
-	.join(' ');
-const svg = logoSvg.replace('<svg', `<svg ${attrs}`);
+	.join(" ");
+const svg = logoSvg.replace("<svg", `<svg ${attrs}`);
 ---
 
 <Fragment set:html={svg} />
