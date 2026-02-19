@@ -22,25 +22,25 @@ const { title, description, pubDate, updatedDate } = Astro.props;
         >
             <article>
                 <header class="flex gap-2 pb-5">
-                    <FormattedDate date={pubDate} />
                     <nav>
                         <ul class="header-links gap-2">
+                            <li>
+                                <a id="go-home" class="underline" href="/">
+                                    go home</a
+                                >
+                            </li>
                             <li>
                                 <a
                                     id="permalink"
                                     class="underline"
                                     href={Astro.url.pathname}
                                 >
-                                    permalink
-                                </a>
-                            </li>
-                            <li>
-                                <a id="go-home" class="underline" href="/">
-                                    go home
-                                </a>
+                                    permalink</a
+                                >
                             </li>
                         </ul>
                     </nav>
+                    <FormattedDate date={pubDate} />
                 </header>
                 <section class="prose">
                     <slot />

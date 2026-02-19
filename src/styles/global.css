@@ -2,83 +2,83 @@
 @plugin "@tailwindcss/typography";
 
 @font-face {
-	font-family: InterVariable;
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/Inter/InterVariable.woff2") format("woff2");
+    font-family: InterVariable;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/Inter/InterVariable.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: InterVariable;
-	font-style: italic;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/Inter/InterVariable-Italic.woff2") format("woff2");
+    font-family: InterVariable;
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/Inter/InterVariable-Italic.woff2") format("woff2");
 }
 
 @theme {
-	--font-sans: "InterVariable", sans-serif;
-	--font-mono:
-		ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-		"DejaVu Sans Mono", monospace;
-	--color-primary: #584311;
-	--color-primary-text: #fdd9b9;
+    --font-sans: "InterVariable", sans-serif;
+    --font-mono:
+        ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+        "DejaVu Sans Mono", monospace;
+    --color-primary: #584311;
+    --color-primary-text: #fdd9b9;
 }
 
 body {
-	background-color: var(--color-primary);
-	color: var(--color-primary-text);
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
 }
 
 .prose :where(p, ul, ol, pre, blockquote, h2, h3, h4, hr):not(:first-child) {
-	margin-top: 0.8em;
+    margin-top: 0.8em;
 }
 
 .prose :where(p, ul, ol, pre, blockquote):not(:last-child) {
-	margin-bottom: 0.8em;
+    margin-bottom: 0.8em;
 }
 
 .prose {
-	--tw-prose-body: var(--color-primary-text);
-	--tw-prose-headings: var(--color-primary-text);
-	--tw-prose-links: var(--color-primary-text);
-	--tw-prose-bold: var(--color-primary-text);
-	--tw-prose-code: var(--color-primary-text);
-	--tw-prose-quotes: var(--color-primary-text);
-	--tw-prose-counters: var(--color-primary-text);
-	--tw-prose-bullets: var(--color-primary-text);
-	--tw-prose-hr: var(--color-primary-text);
-	--tw-prose-pre-bg: inherit;
+    --tw-prose-body: var(--color-primary-text);
+    --tw-prose-headings: var(--color-primary-text);
+    --tw-prose-links: var(--color-primary-text);
+    --tw-prose-bold: var(--color-primary-text);
+    --tw-prose-code: var(--color-primary-text);
+    --tw-prose-quotes: var(--color-primary-text);
+    --tw-prose-counters: var(--color-primary-text);
+    --tw-prose-bullets: var(--color-primary-text);
+    --tw-prose-hr: var(--color-primary-text);
+    --tw-prose-pre-bg: inherit;
 }
 
 .header-links {
-	display: flex;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.header-links li::before {
-	content: "|";
+.header-links li::after {
+    content: "|";
 }
 
 .prose pre {
-	border-radius: 0;
-	overflow-x: auto;
-	tab-size: 4;
+    border-radius: 0;
+    overflow-x: auto;
+    tab-size: 4;
 }
 
 .prose pre code {
-	counter-reset: line;
+    counter-reset: line;
 }
 
 .prose pre code > .line::before {
-	counter-increment: line;
-	content: counter(line);
-	display: inline-block;
-	width: 2ch;
-	margin-right: 1.5ch;
-	text-align: right;
-	opacity: 0.4;
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    width: 2ch;
+    margin-right: 1.5ch;
+    text-align: right;
+    opacity: 0.4;
 }

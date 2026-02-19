@@ -1,0 +1,9 @@
+- [ ] Background color for link when it is pressed/clicked
+  - [ ] Choose a good selection color
+  - [ ] Choose a good selection color for codeblocks
+- [ ] Add proper favicon from SVG
+- [ ] Finish the `about` section
+- [ ] Decide if add photo
+- [ ] Add content to the RSS feed
+- [ ] Add icons to navigation in article view
+  - [X] Re-order so `go home` is first, then permalink, then the date
