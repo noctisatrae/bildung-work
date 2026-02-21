@@ -7,13 +7,13 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://bildung.work",
-	integrations: [mdx(), sitemap()],
+  site: "https://bildung.work",
+  integrations: [mdx(), sitemap()],
 
-	vite: {
-		plugins: [tailwindcss()],
-		server: {
-			allowedHosts: ["7a22044424c6.ngrok.app"],
-		},
-	},
+  vite: {
+    plugins: [tailwindcss()],
+    server: {
+      allowedHosts: ["4b09210dcf51.ngrok.app"],
+    },
+  },
 });
