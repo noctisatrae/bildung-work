@@ -1,7 +1,7 @@
 {
-	"lsp": {
-		"biome": {
-			"enabled": false
-		}
-	}
+  "lsp": {
+    "biome": {
+      "enable_lsp_tasks": false,
+    },
+  },
 }

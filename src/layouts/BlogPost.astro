@@ -5,9 +5,12 @@ import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import Header from "../components/Header.astro";
 
+import Back from "../assets/back.svg";
+import Link from "../assets/link.svg";
+
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate } = Astro.props;
 ---
 
 <html lang="en">
@@ -21,20 +24,26 @@ const { title, description, pubDate, updatedDate } = Astro.props;
             class="flex-1 px-3 font-mono max-w-[80ch] w-full mx-auto overflow-hidden"
         >
             <article>
-                <header class="flex gap-2 pb-5">
+                <header class="flex pb-5">
                     <nav>
-                        <ul class="header-links gap-2">
+                        <ul class="header-links">
                             <li>
-                                <a id="go-home" class="underline" href="/">
+                                <a
+                                    id="go-home"
+                                    class="underline flex items-center gap-2"
+                                    href="/"
+                                >
+                                    <Back />
                                     go home</a
                                 >
                             </li>
                             <li>
                                 <a
                                     id="permalink"
-                                    class="underline"
+                                    class="underline flex items-center gap-2"
                                     href={Astro.url.pathname}
                                 >
+                                    <Link />
                                     permalink</a
                                 >
                             </li>

@@ -54,13 +54,20 @@ body {
 
 .header-links {
     display: flex;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+.header-links li {
+    display: flex;
+    align-items: center;
+}
+
 .header-links li::after {
     content: "|";
+    margin-inline: 0.5em;
 }
 
 .prose pre {
