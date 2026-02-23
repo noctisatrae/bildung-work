@@ -1,0 +1,23 @@
+---
+const birthday = new Date(2007, 2, 27);
+const today = new Date();
+let age = today.getFullYear() - birthday.getFullYear();
+const hasHadBirthday =
+    today.getMonth() > birthday.getMonth() ||
+    (today.getMonth() === birthday.getMonth() &&
+        today.getDate() >= birthday.getDate());
+if (!hasHadBirthday) age--;
+---
+
+{age}
+<script>
+    const birthday = new Date(2007, 2, 27);
+    const today = new Date();
+    let age = today.getFullYear() - birthday.getFullYear();
+    const hasHadBirthday =
+        today.getMonth() > birthday.getMonth() ||
+        (today.getMonth() === birthday.getMonth() &&
+            today.getDate() >= birthday.getDate());
+    if (!hasHadBirthday) age--;
+    document.getElementById("age")!.textContent = String(age);
+</script>

@@ -1,9 +1,10 @@
 - [ ] Background color for link when it is pressed/clicked
-  - [ ] Choose a good selection color
-  - [ ] Choose a good selection color for codeblocks
-- [ ] Add proper favicon from SVG
-- [ ] Finish the `about` section
+  - [X] Choose a good selection color
+  - [X] Choose a good selection color for codeblocks
+- [X] Add proper favicon from SVG
+- [X] Finish the `about` section
 - [ ] Decide if add photo
-- [ ] Add content to the RSS feed
-- [ ] Add icons to navigation in article view
+- [X] Add content to the RSS feed
+  - [ ] Correctly render MDX content (strip imports, compute quotations)
+- [X] Add icons to navigation in article view
   - [X] Re-order so `go home` is first, then permalink, then the date

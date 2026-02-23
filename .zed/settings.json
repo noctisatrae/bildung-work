@@ -1,7 +1,9 @@
 {
-  "lsp": {
-    "biome": {
-      "enable_lsp_tasks": false,
+  "languages": {
+    "Markdown": {
+      "show_wrap_guides": true,
+      "wrap_guides": [80],
+      "soft_wrap": "bounded",
     },
   },
 }

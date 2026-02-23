@@ -58,6 +58,14 @@ body {
     margin-bottom: 0.8em;
 }
 
+.prose a[data-footnote-ref]::before {
+    content: "[";
+}
+
+.prose a[data-footnote-ref]::after {
+    content: "]";
+}
+
 .prose {
     --tw-prose-body: var(--color-primary-text);
     --tw-prose-headings: var(--color-primary-text);
