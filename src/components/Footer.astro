@@ -11,7 +11,10 @@ const { spacer = false } = Astro.props;
         spacer && "mt-8",
     ]}
 >
-    <a class="underline" href="https://github.com/noctisatrae">GitHub</a>
-    <a class="underline" href="/rss">RSS</a>
-    <a class="underline" href="/about">About This Website</a>
+    <a
+        class="underline focus:bg-selection"
+        href="https://github.com/noctisatrae">GitHub</a
+    >
+    <a class="underline focus:bg-selection" href="/rss">RSS</a>
+    <a class="underline focus:bg-selection" href="/about">About This Website</a>
 </nav>

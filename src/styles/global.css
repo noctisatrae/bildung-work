@@ -92,6 +92,11 @@ body {
     align-items: center;
 }
 
+.prose a:focus,
+.header-links li a:focus {
+    background-color: var(--color-selection);
+}
+
 .header-links li::after {
     content: "|";
     margin-inline: 0.5em;
