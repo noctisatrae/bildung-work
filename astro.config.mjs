@@ -4,7 +4,11 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import remarkGfm from "remark-gfm";
-import { defineConfig } from "astro/config";
+import { defineConfig, envField } from "astro/config";
+import { loadEnv } from "vite";
+
+const env = loadEnv("", process.cwd(), "");
+const ngrokHost = env.NGROK_HOST;
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,7 +24,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     server: {
-      allowedHosts: ["4b09210dcf51.ngrok.app"],
+      allowedHosts: ngrokHost ? [ngrokHost] : [],
     },
   },
 });
