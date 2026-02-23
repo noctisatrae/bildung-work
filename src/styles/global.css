@@ -17,18 +17,37 @@
     src: url("/fonts/Inter/InterVariable-Italic.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: GeistMono;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/GeistMono/GeistMono[wght].woff2") format("woff2");
+}
+
+@font-face {
+    font-family: GeistMono;
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/GeistMono/GeistMono-Italic[wght].woff2") format("woff2");
+}
+
 @theme {
     --font-sans: "InterVariable", sans-serif;
-    --font-mono:
-        ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
-        "DejaVu Sans Mono", monospace;
+    --font-mono: "GeistMono", monospace;
     --color-primary: #584311;
     --color-primary-text: #fdd9b9;
+    --color-selection: #0f0b03;
 }
 
 body {
     background-color: var(--color-primary);
     color: var(--color-primary-text);
+}
+
+::selection {
+    background-color: var(--color-selection);
 }
 
 .prose :where(p, ul, ol, pre, blockquote, h2, h3, h4, hr):not(:first-child) {
@@ -71,7 +90,6 @@ body {
 }
 
 .prose pre {
-    border-radius: 0;
     overflow-x: auto;
     tab-size: 4;
 }
