@@ -16,9 +16,9 @@ const posts = (await getCollection("blog")).sort(
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     </head>
-    <body class="min-h-dvh flex flex-col">
+    <body class="min-h-dvh flex flex-col px-4">
         <Header />
-        <main class="flex-1 px-1.5">
+        <main class="flex-1">
             <section>
                 <ul>
                     {
@@ -33,7 +33,7 @@ const posts = (await getCollection("blog")).sort(
                                             date={post.data.pubDate}
                                         />
                                     </p>
-                                    <h2 class="font-regular text-[16px]">
+                                    <h2 class="font-regular text-[20px]">
                                         {post.data.title}
                                     </h2>
                                 </a>

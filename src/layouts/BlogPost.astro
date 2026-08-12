@@ -18,13 +18,11 @@ const { title, description, pubDate } = Astro.props;
         <BaseHead title={title} description={description} />
     </head>
 
-    <body class="min-h-dvh flex flex-col">
+    <body class="min-h-dvh flex flex-col px-4">
         <Header />
-        <main
-            class="flex-1 px-3 max-w-[80ch] w-full mx-auto overflow-hidden font-mono"
-        >
+        <main class="flex-1 w-full overflow-hidden">
             <article>
-                <header class="flex pb-5">
+                <header class="flex items-center pb-5 max-sm:text-[18px]">
                     <nav>
                         <ul class="header-links">
                             <li>
@@ -34,8 +32,8 @@ const { title, description, pubDate } = Astro.props;
                                     href="/"
                                 >
                                     <Back />
-                                    go home</a
-                                >
+                                    go home
+                                </a>
                             </li>
                             <li>
                                 <a
@@ -44,14 +42,14 @@ const { title, description, pubDate } = Astro.props;
                                     href={Astro.url.pathname}
                                 >
                                     <Link />
-                                    permalink</a
-                                >
+                                    permalink
+                                </a>
                             </li>
                         </ul>
                     </nav>
                     <FormattedDate date={pubDate} />
                 </header>
-                <section class="prose">
+                <section class="prose prose-xl">
                     <slot />
                 </section>
             </article>
