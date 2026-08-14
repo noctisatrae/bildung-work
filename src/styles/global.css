@@ -15,6 +15,7 @@ body {
     background-color: var(--color-primary);
     color: var(--color-primary-text);
     font-size: 1.25rem;
+    font-feature-settings: 'zero' 1;
 }
 
 .prose :where(p, ul, ol, pre, blockquote, h2, h3, h4, hr):not(:first-child) {
