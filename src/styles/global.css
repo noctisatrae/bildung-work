@@ -8,7 +8,7 @@
     --font-sans: var(--font-inter);
     --font-mono: var(--font-geist-mono);
     --color-primary: #120E04;
-    --color-primary-text: white;
+    --color-primary-text: #BEB7A8;
 }
 
 body {
@@ -16,6 +16,8 @@ body {
     color: var(--color-primary-text);
     font-size: 1.25rem;
     font-feature-settings: 'zero' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .prose :where(p, ul, ol, pre, blockquote, h2, h3, h4, hr):not(:first-child) {
@@ -24,6 +26,15 @@ body {
 
 .prose :where(p, ul, ol, pre, blockquote):not(:last-child) {
     margin-bottom: 0.8em;
+}
+
+/* headings sit closer to the text they introduce than to the text above */
+.prose :where(h2, h3, h4):not(:first-child) {
+    margin-top: 1.6em;
+}
+
+.prose :where(h2, h3, h4) {
+    margin-bottom: 0.4em;
 }
 
 .prose a[data-footnote-ref]::before {
@@ -35,6 +46,9 @@ body {
 }
 
 .prose {
+    max-width: 48ch;
+    line-height: 1.6;
+
     --tw-prose-body: var(--color-primary-text);
     --tw-prose-headings: var(--color-primary-text);
     --tw-prose-links: var(--color-primary-text);
