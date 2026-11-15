@@ -1,21 +1,32 @@
 ---
-title: about this website
+title: about
 pubDate: "Sun Feb 22 2026"
-description: "A short story about my *own* Frankenstein monster"
+description: "A short story about me and the inception of this website."
 ---
 import Age from "../../components/Age.astro";
 
-Hello! My name is Hector, I am currently <Age/> years old and living in Toronto. I made this website with the intention of sharing things I'm working on/learning but also take writings and ideas sitting in my notebook's pages to bring them to the finish line.
+Hello! My name is Hector and I’m <Age/> years old.
 
-This website was designed to be simple, performant and accessible; I explicitly avoided seeking completeness so I could sit down and finish something. This technique worked wonderfully and the result is this *awesome* post you're enjoying with cool fonts[^Inter-by-Rasmus][^Geist-Mono-by-Vercel] and a __cute__ logo!
+I am a programmer and aspiring documentary filmmaker currently hopping around France, my home country. This website is a home for everything I work on and a place to chronicle my process. It aims to be simple, accessible and very fast! Here are the projects I hope to accomplish: 
 
-I like computer science, making software & art, philosophy and literature. I would love to have more time to reflect and think deeper. These days, I work at [Frens](https://frens.lol) where I solve interesting problems and strive to create fascinating, useful tech for humans.
+- Self-producing two documentaries. I want the first one to dive into the research chemicals scene and the incredible grassroots mad science they’re creating. The second has been tentatively named *La Lutte Est Mon Métier* and it aims to be an intimate display of the struggle of radical left activists and the toll their commitment takes on their mental health.
+- Making *Canard*, a fully-fledged toolkit for journalists and researchers who need to crawl through, analyze and make visualizations for large dumps of data. It will have graph-based pipelines, integrated VCS suited for big binary files and an integrated Typst compiler to assemble great documents. Long-term, I want *Canard* to become the prime tool used in PhD labs and newsrooms. The best, most-loved, extendable, GPLv3 or MPL2.0 (haven’t decided yet) open-source software rivaling the likes of Palantir and Tableau. 
+- Writing a roleplaying campaign based upon Foundryheart. It will recount the tale of undead and humans coming together to bring a Lich to his knees and break his stronghold over a brutal world ravaged by an all-consuming crimson Mist. The narrative is centered around Mount Diamir, a towering, untamed mountain range atop the civilized world, where the Lich has placed the new capital of the world, inaccessible to free undead. With this setting, I want to experiment with a West Marches campaign where characters drop in and out of the story with overlapping storylines.
+- Designing a Typst toolkit for making roleplaying game scenarios.
 
-I currently want to understand how algebraic structures[^Example-of-a-Cool-One] relate to computer science and how I can use them to design constructs with *useful properties (e.g; composability)* and __strong guarantees (e.g; concurrency safety)__. On the philosophical side, I am passionate about [*The Rebel* by Albert Camus](https://en.wikipedia.org/wiki/The_Rebel_(book)) and the difficult questions it asks about political modes of action, their necessity and inherent metaphysical tensions[^Camus-Tensions].
+Previously, I worked at [*Jimmy Energy*](https://www.jimmy-energy.eu)[^Jimmy] in Paris, which was my first job out of high school. Then, I moved to Toronto to work at [*Frens*](https://frens.lol) for roughly a year and a half. Both roles were loosely defined and consisted mostly of solving whatever technical problem was thrown at me. Essentially, I was one of their founding engineers and had to cover a lot of ground in a small team to try to make miracles happen. I’m proud to say I did. Here are some of my favorite achievements:
 
-If you have any questions or want to get in touch, I would love to hear from you at scaramouuuuche+bldw@pm.me.
+- Reverse-engineered the [DFlow program for Kalshi](https://dflow.net/blog/prediction-markets-api) so I could write a pipeline for transactions before they released an IDL. This allowed the Frens team to quickly experiment with a Kalshi integration on top of Polymarket.
+- Wrote my [own custom parser for Jupiter](https://github.com/noctisatrae/solana-tx-parser) and the underlying swap protocols to reduce the amount of generated crap in our codebase. My parser was way faster, more lightweight than the automatically generated one from the Anchor ecosystem. It was used daily and extensively without hiccups in Frens’ production pipeline. 
+- Wrote a messaging server in Go that allowed the Frens team to move away from a slow and expensive SaaS solution. It was based upon [NATS](https://nats.io)+Protobuf and allowed us to carefully evolve the format as we added more features.
+- Used an early version of React Compiler, the only one available at the time, to rewrite all the parts of the app that couldn’t be optimized because of the syntactic limitation of that version. That meant plugging-in the internals of the compiler to emit actual useful warnings when code couldn’t be optimized so I could perform fast targeted edits. All of this was done in one day, and the app was meaningfully faster and more enjoyable to use.
 
-[^Inter-by-Rasmus]: https://rsms.me/inter/
-[^Geist-Mono-by-Vercel]: https://vercel.com/font?type=mono
-[^Example-of-a-Cool-One]: https://en.wikipedia.org/wiki/Monoid
-[^Camus-Tensions]: I liked [this article](https://plato.stanford.edu/entries/camus/#AbRebMur) from [Stanford's Encyclopedia of Philosophy](https://plato.stanford.edu/index.html) because it precisely delves into Camus' preoccupations throughout his life which gives important context to *The Rebel*.
+While I was leading those projects, I was lucky to be aided by wonderful teams and thought partners. They have consistently, throughout it all, supported me so I could do my best work. I am grateful for having had a chance to work with such impressive individuals and creatives in such a compressed amount of time. My professional experience has been nothing short of transformative for me and showed me I could accomplish more than I thought myself capable of. In truth, working at these companies allowed me to finally see that *I can make shit happen*.
+
+I quit my job at *Frens* and came back to France because I couldn’t find a sustainable work-life balance in Toronto, and I wasn’t enjoying the endless experiments it takes for a consumer startup to break into the mainstream.
+
+Thanks for stopping by. If you want to work with me, become friends or hang out, shoot me an email at: 
+
+<a href="mailto:hkubiak+bldw@pm.me">hkubiak+bldw@pm.me</a>
+
+[^Jimmy]: There's also [a great article about their tech](https://fr.wikipedia.org/wiki/Jimmy_(r%C3%A9acteur)) on Wikipedia.

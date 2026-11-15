@@ -46,7 +46,7 @@ body {
 }
 
 .prose {
-    max-width: 48ch;
+    max-width: 55ch;
     line-height: 1.6;
 
     --tw-prose-body: var(--color-primary-text);
